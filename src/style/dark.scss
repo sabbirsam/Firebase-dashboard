@@ -1,25 +1,31 @@
 .app.dark {
   background-color: #111;
-  color: rgb(156, 156, 156);
+  color: rgb(192, 191, 191);
 
+  .widget,.featured,.chart{
+    box-shadow:2px 4px 10px 1px rgb(35 35 35 / 47%);
+  }
   .chartGrid {
     stroke: rgba(228, 228, 228, 0.219);
+  }
+  .home .homeContainer .listContainer{
+    box-shadow:2px 4px 10px 1px rgb(35 35 35 / 47%);
   }
 
   .table {
     background-color: #111;
 
     .tableCell {
-      color: gray;
+      color: rgb(213, 213, 213);
     }
   }
 
   .navbar {
-    color: #999;
+    color: rgb(200, 199, 199);
     border-color: #333;
 
     .search {
-      border-color: gray;
+      border-color: rgb(197, 195, 195);
     }
   }
 
@@ -29,7 +35,7 @@
 
     .top {
       .logo {
-        color: #999;
+        color: rgb(200, 199, 199);
       }
     }
     hr {
@@ -43,7 +49,7 @@
         }
 
         .icon {
-          color: #999;
+          color: rgb(200, 199, 199);
         }
       }
     }
@@ -51,7 +57,7 @@
 
   .datatable {
     .datagrid {
-      color: gray;
+      color: rgb(188, 187, 187);
       border: none;
 
       .viewButton,
