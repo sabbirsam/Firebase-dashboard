@@ -1,4 +1,8 @@
 # Getting Started with Create React App
+git clone -b master clone git@github.com:sabbirsam/Firebase-dashboard.git .
+Use npm 
+sabbir@gmail.com
+123456
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
