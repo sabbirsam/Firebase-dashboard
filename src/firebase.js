@@ -1,8 +1,9 @@
 import { initializeApp } from "firebase/app";
+import {getAuth} from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: process.env.ADMIN_DASHBOARD_FIREBASE_KEY,
-//   apiKey: "",
+//   apiKey: process.env.ADMIN_DASHBOARD_FIREBASE_KEY,
+  apiKey: "AIzaSyBjsUhG9KHpn6W4b0S5kdkje0M-g8X4d7s",
   authDomain: "admindashboard-a58d7.firebaseapp.com",
   projectId: "admindashboard-a58d7",
   storageBucket: "admindashboard-a58d7.appspot.com",
@@ -12,3 +13,5 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
+
+export const auth = getAuth();
