@@ -1,6 +1,7 @@
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import List from "./pages/list/List";
+import Drags from "./pages/drag/Drags";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
@@ -36,12 +37,7 @@ function App() {
               />
             </Route>
             <Route path="products">
-              <Route index element={<RequireAuth><List /></RequireAuth>} />
-              <Route path=":productId" element={<RequireAuth><Single /></RequireAuth>} />
-              <Route
-                path="new"
-                element={<RequireAuth><New inputs={productInputs} title="Add New Product" /></RequireAuth>}
-              />
+              <Route index element={<RequireAuth><Drags /></RequireAuth>} />
             </Route>
           </Route>
         </Routes>
